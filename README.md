@@ -15,3 +15,6 @@ pip freeze > requirements.txt
 
 ## Run the app
 fastapi run main.py
+
+## Reference:
+https://www.youtube.com/watch?v=6-WCQOieq5Y
