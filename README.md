@@ -7,10 +7,11 @@ https://docs.python.org/3/library/venv.html
 
 ## Install the dependencies
 pip install fastapi
+
 pip install "fastapi[standard]"    
 
 ## Generate a requirements txt file
 pip freeze > requirements.txt
 
 ## Run the app
-uvicorn main:app --reload
+fastapi run main.py
