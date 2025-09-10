@@ -1,1 +1,10 @@
 # SamplePythonAPI
+
+## Create a virtual environment
+https://docs.python.org/3/library/venv.html
+1. run the command to creare the environment: **_python -m venv venv_**
+2. run the command to activate the environment: **_.\venv\Scripts\activate_**
+
+## Install the dependencies
+pip install fastapi uvicorn
+pip install pydantic    
