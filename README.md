@@ -6,9 +6,8 @@ https://docs.python.org/3/library/venv.html
 2. run the command to activate the environment: **_.\venv\Scripts\activate_**
 
 ## Install the dependencies
-pip install fastapi uvicorn
-
-pip install pydantic    
+pip install fastapi
+pip install "fastapi[standard]"    
 
 ## Generate a requirements txt file
 pip freeze > requirements.txt
