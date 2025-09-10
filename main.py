@@ -11,6 +11,12 @@ DB = {
 }
 
 # GET: list all persons
+@app.get("/")
+async def health():
+    return {"ok": 1}
+
+
+# GET: list all persons
 @app.get("/persons")
 async def get_persons():
     return DB
