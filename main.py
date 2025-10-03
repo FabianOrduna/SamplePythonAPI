@@ -42,3 +42,13 @@ async def reset_db():
     DB.clear()
     return {"message": "Database reset to initial state"}
 
+# POST: procesar clave única
+@app.post("/procesar-clave")
+async def procesar_clave(clave_unica: int = Form(...)):
+    digits = [int(d) for d in str(clave_unica)]
+    suma = sum(digits)
+    resultado = suma * digits[0] * digits[-1]
+    return {
+        "clave_unica": clave_unica,
+        "resultado_final": resultado
+    }
